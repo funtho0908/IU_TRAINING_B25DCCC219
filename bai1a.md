@@ -1,1 +1,6 @@
-# IU_TRAINING_B25DCCC219
+n = int(input())
+anh = list(map(int, input().split()))
+b = int(input())
+phap = list(map(int, input().split()))
+tong = set(anh + phap)
+print(len(tong))
