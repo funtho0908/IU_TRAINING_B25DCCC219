@@ -1,0 +1,18 @@
+#Bài 1 
+n = int(input())
+anh = list(map(int, input().split()))
+b = int(input())
+phap = list(map(int, input().split()))
+tong = set(anh + phap)
+print(len(tong))
+#Bài 2
+shoes = int(input())
+sizes = list(map(int, input().split()))
+customers = int(input())
+money = 0
+for i in range(customers):
+    size, price = map(int, input().split())
+    if size in sizes:  
+        money += price 
+        sizes.remove(size)
+print(money)
