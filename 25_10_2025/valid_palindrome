@@ -1,0 +1,10 @@
+palindrome = str(input("palindrome =").lower())
+check = ""
+for a in palindrome:
+    if a.isalpha():
+        check += a
+reversed_check = check[::-1]
+if reversed_check == check:
+    print(True)
+else:
+    print(False)
