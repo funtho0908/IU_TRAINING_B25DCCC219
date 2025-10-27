@@ -1,8 +1,8 @@
 n = int(input())
 words = []
 counts = {}
-w = input().strip()
 for _ in range(n):
+    w = input().strip()
     if w not in counts:
         words.append(w)
         counts[w] = 1
@@ -10,3 +10,4 @@ for _ in range(n):
         counts[w] += 1
 print(len(words))
 print(*[counts[w] for w in words])
+
