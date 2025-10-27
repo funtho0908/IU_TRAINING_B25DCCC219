@@ -1,7 +1,7 @@
 n = int(input())
 words = []
 counts = {}
-for _ in range(n):
+for i in range(n):
     w = input().strip()
     if w not in counts:
         words.append(w)
